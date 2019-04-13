@@ -36,7 +36,7 @@ public class TestHomePage {
   }
 
   @Test
-  public void verifySearchButton() {
+  public void verifyHomePage() {
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       driver.get("http://localhost:8080");
       WebElement selectUserButton = driver.findElement(By.id("dropdownMenuButton"));
