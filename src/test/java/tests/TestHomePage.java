@@ -40,7 +40,7 @@ public class TestHomePage {
   @Test
   public void verifyHomePage() {
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-      driver.get("http://localhost:8080");
+      driver.get(System.getProperty("siteHostName"));
       WebElement selectUserButton = driver.findElement(By.id("dropdownMenuButton"));
       Assert.assertEquals(selectUserButton.getText(),"SELECT USER","Text not found!");
       selectUserButton.click();
