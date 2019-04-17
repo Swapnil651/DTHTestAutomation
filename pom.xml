@@ -64,5 +64,19 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+        	 <extensions>
+            <extension>
+              <groupId>org.apache.maven.wagon</groupId>
+              <artifactId>wagon-ssh</artifactId>
+              <version>2.3</version>
+            </extension>
+          </extensions>
+        </build>
+
+       <distributionManagement>
+       <repository>
+         <id>ssh-my-aws</id>
+           <url>scp://18.222.136.16/var/www/custom</url>
+       </repository>
+       </distributionManagement> 
 </project>

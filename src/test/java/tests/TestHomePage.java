@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
 import org.testng.annotations.AfterClass;
@@ -26,8 +26,10 @@ public class TestHomePage {
 
   @BeforeClass
   public void beforeClass() {
+	  ChromeOptions chromeOptions = new ChromeOptions();
+	  chromeOptions.addArguments("--headless");
 	  WebDriverManager.chromedriver().setup();
-	  driver = new ChromeDriver();
+	  driver = new ChromeDriver(chromeOptions);
   }
 
   @AfterClass
