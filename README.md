@@ -8,4 +8,5 @@ https://www.seleniumeasy.com/jenkins-tutorials/set-up-testng-reports-in-jenkins
 
 Add Post Build Action
 Publish TestNG Results
-you should be able to see TestNG XML report pattern which is filled with '**/testng-results.xml' 
+you should be able to see TestNG XML report pattern which is filled with '**/testng-results.xml'
+https://www.guru99.com/testng-execute-multiple-test-suites.html
